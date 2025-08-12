@@ -1,0 +1,109 @@
+/* main page */
+body {
+    font-size: 1.25em;
+    width: 80%;
+    margin: auto;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    margin: 40px;
+    margin-top: 60px;
+    
+}
+.tabs > ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.tabs > ul li {
+    margin-right: 10px;
+}
+.tabs .trigger {
+    list-style-type: none;
+    background: lightgray;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.tabs .trigger.active {
+    background: blue;
+    color: white;
+}
+.tabs .content{
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: none;
+
+}
+.tabs .content.active {
+    display: block;
+}
+h3{
+    color: forestgreen;
+}
+/* coin flip */
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+.flip {
+      display: flex;
+      justify-content: center; 
+      margin-top: 20px;
+      margin-bottom: 20px;
+      gap: 30px;
+    }
+.flip button {
+    font-size: 25px;
+    display: inline-block;   
+    margin: 0;    
+}
+
+
+
+
+
+
+/* guessing game */
+p{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+input{
+    font-size: x-large;
+    margin: auto;
+    
+}
+span{
+    padding: 3px;
+    font-size: xx-large;
+}
+button{
+    font-size: x-large;
+    display: block;
+    margin: auto;
+    
+}
+.tooBig{
+    background-color: pink;
+    color: blue;
+}
+.tooSmall{
+    background-color: lightblue;
+    color: blue;
+}
+.tooMany{
+    background-color: red;
+    color: black;
+}
+.justRight{
+    background-color: lightgreen;
+    color: green;
+}

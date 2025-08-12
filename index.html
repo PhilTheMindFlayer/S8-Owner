@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="ui.css">
+
+    <title>Final Project</title>
+</head>
+<body>
+  
+    <h1>Stephen Perry</h1>
+
+    <h1>Shall We Play a Game?</h1>
+        
+        <div class="tabs">
+            <ul>
+                <li class="trigger" data-target="#coin">Coin Toss</li>
+                <li class="trigger" data-target="#guess">Guessing Game</li>
+            </ul>
+            <div class="content" id="coin">
+                <h1>Toss a Coin</h1>
+                <div id="flip" class="flip">
+                    <button data-choice="heads">Heads</button>
+                    <button data-choice="tails">Tails</button>
+                </div>
+                <img id="CoinImage" src="CoinTossImages/both.jpg">
+
+                <div id="return">
+                    <p id="pick"></p>
+                    <p id="face"></p>
+                    <p id="outcome"></p>
+                    <p id="score"></p>
+                </div>
+
+
+            </div>
+            <div class="content" id="guess">
+                <h1>Number Guessing Game</h1>
+                <p>I have selected a random number between 1 and 100. <br>
+                See if you can guess it in 10 turns or fewer. <br>
+                I'll tell you if your guess was too high or too low.</p>
+                <form id="form">
+                    <label for="field">Enter a guess:</label>
+                    <input id="field" type="text">
+                </form>
+
+                <p id="history"></p>
+                <p><span></span></p>
+            </div>
+        </div>
+
+    <script src='index.js'></script>
+    <script src="coin.js"></script>
+    <script src="guess.js"></script>
+</body>
+</html>
